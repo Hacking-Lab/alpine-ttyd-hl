@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  alpine-ttypd:
+    build: .
+    image: hackinglab/alpine-ttyd:3.2
+    environment:
+    - AUTHOR=e1
+    - HL_USER_USERNAME=hacker
+    - HL_USER_PASSWORD=compass
+    ports:
+      - 7681:7681
+
+
