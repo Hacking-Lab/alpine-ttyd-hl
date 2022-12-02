@@ -1,9 +1,9 @@
 version: '2'
 
 services:
-  alpine-ttypd:
+  alpine-ttypd-hl:
     build: .
-    image: hackinglab/alpine-ttyd:3.2
+    image: hackinglab/alpine-ttyd-hl:3.2
     environment:
     - AUTHOR=e1
     - HL_USER_USERNAME=hacker
