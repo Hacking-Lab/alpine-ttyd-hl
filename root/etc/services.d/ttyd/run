@@ -20,5 +20,5 @@ ls -lt /
 
 
 
-exec /usr/local/bin/ttyd -u $userid -g $groupid bash --rcfile /etc/bashrc;
+exec /usr/local/bin/ttyd -W -u $userid -g $groupid bash --rcfile /etc/bashrc;
 #exec ttyd -B -u $userid -g $groupid bash --rcfile /etc/bashrc;
