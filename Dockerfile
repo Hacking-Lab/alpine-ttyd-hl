@@ -1,5 +1,5 @@
 FROM hackinglab/alpine-base-hl:3.2
-LABEL maintainer="Ivan Buetler <ivan.buetler@compass-security.com>"
+LABEL maintainer="Ivan Buetler <ivan.buetler@hacking-lab.com>"
 
 
 RUN apk update && apk --no-cache add sudo alpine-sdk cmake zlib-dev libuv libuv-dev json-c json-c-dev libwebsockets libwebsockets-dev libwebsockets-evlib_uv openssl openssl-dev libwebsockets-dev && \
