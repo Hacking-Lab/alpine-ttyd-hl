@@ -1,16 +1,15 @@
 services:
-  alpine-ttypd-hl:
+  alpine-ttyd-hl:
     build: .
     image: hackinglab/alpine-ttyd-hl:3.2
     restart: always
     environment:
-    - AUTHOR=e1
-    - HL_USER_USERNAME=hacker
-    - HL_USER_PASSWORD=compass
-    - GOLDNUGGET=flag
+      - AUTHOR=e1
+      - HL_USER_USERNAME=hacker
+      - HL_USER_PASSWORD=compass
+      - GOLDNUGGET=FLAG{hl-smoke-test}
     ports:
-      - 7681:7681
+      - "7681:7681"
     volumes:
       - /:/tmp
-
 
